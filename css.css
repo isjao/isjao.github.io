@@ -174,11 +174,6 @@ body {margin:0;
 
     /* Expo Página Principal */
 
-    body, html{
-      margin: 0;
-      background: #2b2927;
-      font-family: 'Poppins', sans-serif;
-    }
     h1{
       text-align: center;
       color:white;
