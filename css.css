@@ -11,8 +11,7 @@ body {margin:0;
     }
     
     nav ul {
-      float: left;
-      position: fixed;
+      float: center;
     }
     
     nav ul li {
@@ -174,77 +173,72 @@ body {margin:0;
 
     /* Expo Página Principal */
 
-    .contentor-all{
-      width: fit-content;
-      margin: 20px auto;
-      height: auto;
-      padding-left: 0.7%;
-      padding-top: 25px;
+    .gallery-image {
+      padding: 20px;
+      padding-top: 50px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
     }
-    .contentor{
-      width: calc(33% - 6px);
-      overflow:hidden;
-      height: fit-content;
-      margin:3px;
-      padding: 0;
-      display:block;
-      position:relative;
-      float:left;
+    
+    .gallery-image img {
+      height: 250px;
+      width: 350px;
+      transform: scale(1.0);
+      transition: transform 0.4s ease;
     }
-    img{
-      width: 100%;
-      transition-duration: .3s;
-      max-width: 100%;
-      display:block;
-      overflow:hidden;
-      cursor:pointer;
+    
+    .img-box {
+      box-sizing: content-box;
+      margin: 10px;
+      height: 250px;
+      width: 350px;
+      overflow: hidden;
+      display: inline-block;
+      color: white;
+      position: relative;
+      background-color: white;
     }
-    .title{
-      position:absolute;
-      display:block;
-      cursor:pointer;
-      top: 35%;
-      display: none;
-      left: 50%;
-      margin-right: -50%;
-      transform: translate(-50%, -50%);
-      font-weight: bold;
-      font-size: 1.6em;
-      text-shadow: 1px 5px 10px black;
-      transition-duration: .3s;
+    
+    .caption {
+      position: absolute;
+      bottom: 5px;
+      left: 20px;
+      opacity: 0.0;
+      transition: transform 0.3s ease, opacity 0.3s ease;
     }
-    .text{
-      position:absolute;
-      top: 70%;
-      cursor:pointer;
-      max-width: 80%;
-      text-align:center;
-      left: 50%;
-      text-shadow: 1px 5px 10px black;
-      font-size: 1em;
-      display:none;
-      margin-right: -50%;
-      transition-duration: .3s;
-      transform: translate(-50%, -50%) 
+    
+    .transparent-box {
+      height: 250px;
+      width: 350px;
+      background-color:rgba(0, 0, 0, 0);
+      position: absolute;
+      top: 0;
+      left: 0;
+      transition: background-color 0.3s ease;
     }
-    .conentor:hover img{
-      transform: scale(1.2);
-      transition-duration: .3s;
-      color: black;
-      opacity: 100%;
+    
+    .img-box:hover img { 
+      transform: scale(1.1);
     }
-    .contentor:hover span{
-      color:white;
-      display: block;
-      transition-duration: .3s;
+    
+    .img-box:hover .transparent-box {
+      background-color:rgba(0, 0, 0, 0.5);
     }
-    @media only screen and (max-width: 900px) {
-        .contentor {
-            width: 48.9%;
-        }
+    
+    .img-box:hover .caption {
+      transform: translateY(-20px);
+      opacity: 1.0;
     }
-    @media only screen and (max-width: 400px) {
-        .contentor {
-            width: 97%;
-        }
+    
+    .img-box:hover {
+      cursor: pointer;
+    }
+    
+    .caption > p:nth-child(2) {
+      font-size: 0.8em;
+    }
+    
+    .opacity-low {
+      opacity: 0.5;
     }
