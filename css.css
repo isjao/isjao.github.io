@@ -7,7 +7,7 @@ body {margin:0;
 /* Navegador */
     
     nav {
-      padding: 8px;
+      padding: 20px;
     }
     
     nav ul {
@@ -174,16 +174,14 @@ body {margin:0;
 
     /* Expo Página Principal */
 
-    h1{
-      text-align: center;
-      color:white;
-    }
-    .container-all{
+    .contentor-all{
       width: fit-content;
       margin: 20px auto;
       height: auto;
+      padding-left: 0.7%;
+      padding-top: 25px;
     }
-    .container{
+    .contentor{
       width: calc(33% - 6px);
       overflow:hidden;
       height: fit-content;
@@ -229,24 +227,24 @@ body {margin:0;
       transition-duration: .3s;
       transform: translate(-50%, -50%) 
     }
-    .container:hover img{
+    .conentor:hover img{
       transform: scale(1.2);
       transition-duration: .3s;
-      filter: grayscale(50%);
-      opacity: .7;
+      color: black;
+      opacity: 100%;
     }
-    .container:hover span{
+    .contentor:hover span{
       color:white;
       display: block;
       transition-duration: .3s;
     }
     @media only screen and (max-width: 900px) {
-        .container {
-            width: calc(50% - 6px);
+        .contentor {
+            width: 48.9%;
         }
     }
     @media only screen and (max-width: 400px) {
-        .container {
-            width: 100%;
+        .contentor {
+            width: 97%;
         }
     }
