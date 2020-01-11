@@ -12,6 +12,7 @@ body {margin:0;
     
     nav ul {
       float: center;
+      position: fixed;
     }
     
     nav ul li {
@@ -171,27 +172,42 @@ body {margin:0;
       display: none;
     }
 
+/* ANUNCÍO Aniversário */
+
+.titulo img {
+  width: 100%;
+  padding-top: 3cm;
+  padding-bottom: 7cm;
+}
+
     /* Expo Página Principal */
+
+    h1{
+      color: rgb(0, 0, 0);
+      font-family: Arial, Helvetica, sans-serif;
+      text-align: center;
+      text-transform: uppercase;
+      padding-top: 1cm;
+    }
 
     .gallery-image {
       padding: 20px;
-      padding-top: 50px;
+      padding-top: 25px;
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
     }
     
     .gallery-image img {
-      height: 250px;
-      width: 350px;
-      transform: scale(1.0);
+      width: 100%;
+      height: auto;
       transition: transform 0.4s ease;
     }
     
     .img-box {
       box-sizing: content-box;
       margin: 10px;
-      height: 250px;
+      height: 350px;
       width: 350px;
       overflow: hidden;
       display: inline-block;
@@ -201,15 +217,22 @@ body {margin:0;
     }
     
     .caption {
+      font-family: Arial, Helvetica, sans-serif;
+      color: white;
       position: absolute;
       bottom: 5px;
       left: 20px;
       opacity: 0.0;
-      transition: transform 0.3s ease, opacity 0.3s ease;
+      transition: transform 0.3s ease;
+    }
+
+    a {
+      color: white;
+      text-decoration: none;
     }
     
     .transparent-box {
-      height: 250px;
+      height: 350px;
       width: 350px;
       background-color:rgba(0, 0, 0, 0);
       position: absolute;
