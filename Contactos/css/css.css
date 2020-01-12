@@ -236,7 +236,6 @@ p {
     height: auto;
     overflow: hidden;
     padding-left: 15px;
-    padding-bottom: 0;
     float: none;
     }
   
@@ -251,7 +250,6 @@ p {
       height: auto;
       overflow: hidden;
       padding-left: 15px;
-      padding-bottom: 20px;
       float: none;
   }
 
@@ -268,5 +266,9 @@ p {
   h1{
     padding-left: 15px;
     padding-top: 5px;
+  }
+
+  #info{
+    padding-bottom: 15px;
   }
   }
