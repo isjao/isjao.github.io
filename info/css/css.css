@@ -230,8 +230,10 @@ p {
   padding-left: 15px;
   float: none;
   }
-   }
 
-#sectioninfo{
+#info{
   overflow: hidden;
+  width: 100%;
+  height: auto;
+}
 }
