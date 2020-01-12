@@ -205,3 +205,16 @@ p {
     text-justify: inter-word;
 }
 
+ /* Imagens com Tamanho Ajustado */
+
+ @media screen and (max-width: 864px) {
+
+#cartaz img{
+  width: 90%;
+  height: auto;
+  overflow: hidden;
+  padding-bottom: 1cm;
+  padding-left: 15px;
+  float: none;
+}
+ }
